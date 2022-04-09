@@ -1,0 +1,12 @@
+.App {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 16px;
+  padding-bottom: 24px;
+}
+
+.idle_message {
+  margin: 25vh auto;
+  font-size: 35px;
+  color: #3f51b5;
+}

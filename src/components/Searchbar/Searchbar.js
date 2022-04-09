@@ -6,13 +6,13 @@ export default function Searchbar({ onSubmit }) {
   const [query, setQuery] = useState('');
 
   const handleQueryChange = e => {
-    setQuery(e.currentTarget.value.toLowerCase().trim());
+    setQuery(e.currentTarget.value.toLowerCase());
   };
 
   const handleFormSubmit = e => {
     e.preventDefault();
 
-    if (query === '') {
+    if (query.trim() === '') {
       alert('Please enter search query.');
       return;
     }
